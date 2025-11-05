@@ -439,7 +439,6 @@ function Makie.plot!(ep::EscherPlot{<:Tuple{String}})
 
                 #arrows!(
                     #ep,
-                    #ax,
                     #points,
                     #directions;
                     #arrowcolor = color,
@@ -477,7 +476,6 @@ function Makie.plot!(ep::EscherPlot{<:Tuple{String}})
     # Plot metabolites 
     scatter!(
         ep,
-        #ax,
         metabolites.positions,
         color = metabolites.colors,
         markersize = metabolites.markersizes,
